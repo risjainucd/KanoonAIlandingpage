@@ -135,7 +135,6 @@
 }
 
 /* How It Works section styles */
-/* How It Works section styles */
 .step-card {
   text-align: center;
   padding: 2rem;
@@ -143,10 +142,6 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   background-color: #fff;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .step-card:hover {
@@ -160,22 +155,6 @@
 .step-card h6 {
   color: var(--primary-color);
 }
-
-.step-card p {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.step-number {
-  color: var(--secondary-color);
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#how-it-works-section h4 {
-  color: var(--accent-color); /* Change the heading color to have more contrast */
-}
-
 
 /* About Team section styles */
 .team-card {
@@ -202,7 +181,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  /* object-fit: cover; */
 }
 
 /* Contact Us section styles */
