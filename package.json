@@ -15,8 +15,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "start": "next start"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.18.6",
