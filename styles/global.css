@@ -142,18 +142,23 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   background-color: #fff;
+  color: var(--tertiary-color);
 }
 
 .step-card:hover {
   transform: translateY(-10px);
 }
 
-.step-card h4 {
+.step-number {
   color: var(--secondary-color);
 }
 
 .step-card h6 {
   color: var(--primary-color);
+}
+
+.step-card p {
+  color: var(--tertiary-color);
 }
 
 /* About Team section styles */

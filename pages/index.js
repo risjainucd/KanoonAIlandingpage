@@ -113,7 +113,7 @@ const Step = ({ number, title, description }) => (
   <Grid item xs={12} sm={4}>
     <Card className="step-card">
       <CardContent>
-        <Typography className="step-number" gutterBottom>{number}</Typography>
+        <Typography variant="h4" className="step-number" gutterBottom>{number}</Typography>
         <Typography variant="h6" gutterBottom>{title}</Typography>
         <Typography>{description}</Typography>
       </CardContent>
