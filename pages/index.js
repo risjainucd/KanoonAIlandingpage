@@ -1,10 +1,16 @@
 import React from 'react';
-import './App.css';
 import { AppBar, Toolbar, Typography, Button, Container, Grid, Card, CardContent, TextField, IconButton, Avatar } from '@mui/material';
 import { LinkedIn, Twitter, Facebook } from '@mui/icons-material';
+import Head from 'next/head';
+import Image from 'next/image';
+import rishabhImg from '../public/images/rishabh.jpg';
+import sarthakImg from '../public/images/sarthak.jpg';
 
-const App = () => (
+const Home = () => (
   <main>
+    <Head>
+      <title>KanoonAI</title>
+    </Head>
     <Header />
     <HeroSection />
     <AboutKanoonAISection />
@@ -127,14 +133,14 @@ const AboutTeamSection = () => (
           name="Rishabh Jain" 
           role="Managing Director" 
           linkedin="https://www.linkedin.com/in/rishabh-jain" 
-          imgSrc="/rishabh.jpg" 
+          imgSrc={rishabhImg} 
         />
         <TeamMember 
           key="sarthak-jain" 
           name="Sarthak Jain" 
           role="Co-Founder" 
           linkedin="https://www.linkedin.com/in/sarthak-jain" 
-          imgSrc="/sarthak.jpg" 
+          imgSrc={sarthakImg} 
         />
       </Grid>
     </Container>
@@ -144,7 +150,9 @@ const AboutTeamSection = () => (
 const TeamMember = ({ name, role, linkedin, imgSrc }) => (
   <Grid item xs={12} sm={6}>
     <Card className="team-card">
-      <Avatar className="team-avatar" src={imgSrc} alt={name} />
+      <Avatar className="team-avatar">
+        <Image src={imgSrc} alt={name} />
+      </Avatar>
       <CardContent>
         <Typography variant="h6">{name}</Typography>
         <Typography variant="subtitle1" color="textSecondary">{role}</Typography>
@@ -202,4 +210,4 @@ const Footer = () => (
   </footer>
 );
 
-export default App;
+export default Home;
