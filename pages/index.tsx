@@ -27,8 +27,8 @@ export default function Component() {
           <Image
             src="/kanoonai.png"
             alt="KanoonAI Logo"
-            width={140}
-            height={32}
+            width={150}
+            height={34.4}
             priority
           />
         </Link>
