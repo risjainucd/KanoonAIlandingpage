@@ -1,9 +1,6 @@
-[build]
-  command = "npm run build"
-  publish = ".next"
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+}
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-[build.environment]
-  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+module.exports = nextConfig
