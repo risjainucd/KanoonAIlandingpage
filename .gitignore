@@ -74,3 +74,4 @@ next-env.d.ts
 # Avoid locking files and intermediate images
 **/*.lock
 **/*.lockfile
+.aider*
