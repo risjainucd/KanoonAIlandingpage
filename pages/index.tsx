@@ -25,7 +25,7 @@ export default function Component() {
       <header className="relative z-10 px-4 lg:px-6 h-20 flex items-center max-w-7xl mx-auto w-full">
         <Link className="flex items-center justify-center" href="#">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/KanoonAI%20Logo-l3jAWWkeYzhK15AwnrPXZ2npswZtws.png"
+            src="../public/kanoonai.png"
             alt="KanoonAI Logo"
             width={140}
             height={32}
