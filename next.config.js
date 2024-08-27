@@ -1,8 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  // Add this to help with Netlify deployment
-  target: 'serverless'
-}
+[build]
+  command = "npm run build"
+  publish = ".next"
 
-module.exports = nextConfig
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
